@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerim's web</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>  
+  <script src="https://kit.fontawesome.com/8f6df86a12.js"  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Topmenu -->
+  <div class="topMenu">
+    <div class="topMenuLeft">
+      <i class="fas fa-hat-cowboy-side"></i>
+      <a href="Home.html"><strong>Jerim's</strong> Web</a>
+    </div>
+    <div class="topMenuRight">
+      <div><a href="" >Jeju</a></div>
+      <div><a href="">Gapyeong</a></div>
+    </div>
+    <a href="#" class="topMenuRight_icon" onclick="menuToggle()"><i class="fas fa-ellipsis-h"></i></a>
+  </div>
+  
+<!-- Slideshow -->
+  <div class="slideShow">
+    <div class="slideshow-container">
+      <div class="myslides fade">
+        <div class="numbertext">1</div>
+        <img src="/제주도 풍경 사진/IMG_1539.jpeg" alt="" style="width: 80%;">
+        <div class="text">Jerim's tour</div>
+      </div>
+      <div class="myslides fade">
+        <div class="numbertext">2</div>
+        <img src="/제주도 풍경 사진/IMG_1545.jpeg" alt="" style="width: 80%;">
+        <div class="text">Jerim's tour</div>
+      </div>
+      <div class="myslides fade">
+        <div class="numbertext">3</div>
+        <img src="/제주도 풍경 사진/IMG_1721.jpeg" alt="" style="width: 80%;">
+        <div class="text">Jerim's tour</div>
+      </div>
+      <div class="myslides fade">
+        <div class="numbertext">4</div>
+        <img src="/제주도 풍경 사진/IMG_1726.jpeg" alt="" style="width: 80%;">
+        <div class="text">Jerim's tour</div>
+      </div>
+      <div class="myslides fade">
+        <div class="numbertext">5</div>
+        <img src="/제주도 풍경 사진/IMG_1744.jpeg" alt="" style="width: 80%;">
+        <div class="text">Jerim's tour</div>
+      </div>
+  
+      <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlides(1)">&#10095;</a>
+   
+      <div class="slideshow-dot">
+        <span class="dot" onclick="currentSlides(0)"></span>
+        <span class="dot" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+        <span class="dot" onclick="currentSlides(4)"></span>
+      </div>
+    </div>
+  
+    <div class=hashTag_container>
+      <div class="hashTags">
+        <a href="https://www.google.com/search?q=%EC%95%A0%EC%9B%94&source=lmns&bih=796&biw=1440&hl=ko&sa=X&ved=2ahUKEwiPrvfS74bvAhVlQfUHHbYXCu4Q_AUoAHoECAEQAA" target="_blank" class="hash">#애월</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk00VEWofG9s5WnTWqtJhNruqjxpkjA%3A1614319200930&ei=YI44YIWrONmNoASr4KCIDA&q=%EC%A0%95%EC%9B%90&oq=%EC%A0%95%EC%9B%90&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgQIIxAnOggIABCxAxCDAToHCCMQ6gIQJzoECAAQA1D0SVjsUGCiV2gCcAJ4AIABrwGIAY4JkgEDMC45mAEAoAEBqgEHZ3dzLXdperABCsgBB8ABAQ&sclient=gws-wiz&ved=0ahUKEwiF25nU74bvAhXZBogKHSswCMEQ4dUDCA0&uact=5" target="_blank" class="hash">#정원</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk03yhIycCCQaPfQCIobJW6RU2x9F4w%3A1614319213168&ei=bY44YNr0CYWpoASN55f4CQ&q=%ED%95%B4%EB%B3%80&oq=%ED%95%B4%EB%B3%80&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgQIABADMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BwgAEEcQsAM6BQgAELEDOgQIIxAnOggIABCxAxCDAToHCCMQ6gIQJ1Cb7wFYjPkBYIn7AWgFcAJ4AYABiQGIAa0IkgEDMC45mAEAoAEBqgEHZ3dzLXdperABCsgBB8ABAQ&sclient=gws-wiz&ved=0ahUKEwia34Ta74bvAhWFFIgKHY3zBZ8Q4dUDCA0&uact=5" target="_blank" class="hash">#해변</a>
+      </div>
+    
+      <div class="hashTags">
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk02vmqvOiiYgdQ0efrv43MICDKmSXg%3A1614319246524&ei=jo44YKW5H4b6wQPVu6zwAg&q=%ED%95%98%EB%8A%98&oq=%ED%95%98%EB%8A%98&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADIFCAAQsQMyCAgAELEDEIMBMggIABCxAxCDATIFCAAQsQMyAggAMgIIADICCAAyAggAOgcIABBHELADOgQIIxAnOgQIABAKUOY6WJVBYLlCaAJwAngAgAGWAogBzQiSAQUwLjcuMZgBAKABAaoBB2d3cy13aXrIAQfAAQE&sclient=gws-wiz&ved=0ahUKEwiluPjp74bvAhUGfXAKHdUdCy4Q4dUDCA0&uact=5" target="_blank" class="hash">#하늘</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk0320jrKZMhO1nuGPVKzqtfi02yxYw%3A1614319256149&ei=mI44YNHPCMfh-AbA14-oCA&q=%EB%B0%94%EB%8B%B7%EA%B0%80&oq=%EB%B0%94%EB%8B%B7%EA%B0%80&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADIECAAQAzICCAAyAggAMgIIADICCAA6BAgjECc6CAgAELEDEIMBOgUIABCxAzoECAAQQzoECAAQClCcOViqQGDNQ2gCcAJ4AYABkQGIAdIHkgEDMC44mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz&ved=0ahUKEwjR-8Pu74bvAhXHMN4KHcDrA4UQ4dUDCA0&uact=5" target="_blank" class="hash">#바닷가</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk03M3_OsIWpFRwlt98HEhWLFGvj3JQ%3A1614319265777&ei=oY44YMSCL8atoATN6KD4BA&q=%EC%98%A5%EC%83%81&oq=%EC%98%A5%EC%83%81&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgcIABCHAhAUMgIIADICCAAyAggAMgIIADIHCAAQhwIQFDICCAAyAggAMgIIADoFCAAQsQM6CAgAELEDEIMBOgQIABADUIBKWKROYJlQaAFwAngBgAGXAYgB6waSAQMwLjeYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwiE14_z74bvAhXGFogKHU00CE8Q4dUDCA0&uact=5" target="_blank" class="hash">#옥상</a>
+      </div>
+    
+      <div class="hashTags">
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk018MKu2WHttoKnCi0X4I0-uDVfnzg%3A1614319277367&ei=rY44YMP7FdLXhwPSxoSACQ&q=%EC%9A%A9%EB%91%90%EC%82%B0&oq=%EC%9A%A9%EB%91%90%EC%82%B0&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgQIIxAnOgUIABCxAzoICAAQsQMQgwE6BAgAEANQhCtY7zRg9zVoA3ACeACAAYIBiAHICZIBBDAuMTCYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz&ved=0ahUKEwiDhtP474bvAhXS62EKHVIjAZAQ4dUDCA0&uact=5" target="_blank" class="hash">#용두산</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk02Wg5OS0VV_W3nY8VtUoiv5cTLmZw%3A1614319285197&ei=tY44YLjFC9Wl-Qa2m62ICA&q=%ED%83%9C%EC%96%91&oq=%ED%83%9C%EC%96%91&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEIMBMgUIABCxAzIFCAAQsQMyBQgAELEDMggIABCxAxCDATIFCAAQsQMyCAgAELEDEIMBMgIIADICCAAyAggAOgcIABBHELADOgQIABADOgQIABBDOgQIABAKUIwtWOcyYOk1aANwAngBgAGcAYgB3gaSAQMwLjeYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz&ved=0ahUKEwj487D874bvAhXVUt4KHbZNC4EQ4dUDCA0&uact=5" target="_blank" class="hash">#태양</a>
+      </div>
+    
+      <div class="hashTags">
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk03IZn3a7n0wcj5NnR3-mMFhwuFU0Q%3A1614319293411&ei=vY44YKDZGJP1wAO48ouYBQ&q=%EC%9A%A9%EB%A8%B8%EB%A6%AC&oq=%EC%9A%A9%EB%A8%B8%EB%A6%AC&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgUIABCxAzoICAAQsQMQgwE6BwgjEOoCECc6BAgjECc6BAgAEANQl2RYlW9ghXBoBXACeAKAAa4BiAHeCZIBBDAuMTCYAQCgAQGqAQdnd3Mtd2l6sAEKyAEIwAEB&sclient=gws-wiz&ved=0ahUKEwjgq6aA8IbvAhWTOnAKHTj5AlMQ4dUDCA0&uact=5" target="_blank" class="hash">#용머리</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk03th7XuuDQYR48yviWMofedpROTgw%3A1614319308818&ei=zI44YOW_MYGchwPLiojACA&q=%ED%91%B8%EB%A5%B8&oq=%ED%91%B8%EB%A5%B8&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBQgAELEDMggIABCxAxCDATIFCAAQsQMyBQgAELEDMggIABCxAxCDATIFCAAQsQMyCAgAELEDEIMBMgUIABCxAzoHCAAQRxCwA1CXRljCSWCySmgCcAJ4AYABc4gBoQSSAQMwLjWYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=gws-wiz&ved=0ahUKEwjl1dKH8IbvAhUBzmEKHUsFAogQ4dUDCA0&uact=5" target="_blank" class="hash">#푸른</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk027uYSnF9iV9KMgCUmc9Qjlj6uh5g%3A1614319319547&ei=1444YKb1IMjn-QaVgoiIDQ&q=%EC%A0%88%EB%B2%BD&oq=%EC%A0%88%EB%B2%BD&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADIFCAAQsQMyCAgAELEDEIMBMgIIADICCAAyAggAOgcIABBHELADUI1SWI1WYJFXaANwAngAgAGKAYgB2QWSAQMwLjaYAQCgAQGqAQdnd3Mtd2l6yAEHwAEB&sclient=gws-wiz&ved=0ahUKEwjmvOGM8IbvAhXIc94KHRUBAtEQ4dUDCA0&uact=5" target="_blank" class="hash">#절벽</a>
+      </div>
+    
+      <div class="hashTags">
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk00xWpCpquhHs-zUY8TokVHoeh1Bww%3A1614319332075&ei=5I44YI-bBI65wAOEqoS4Cg&q=%EC%95%BC%EA%B2%BD&oq=%EC%95%BC%EA%B2%BD&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIABBHELADOgQIIxAnOgUIABCxAzoICAAQsQMQgwFQ12tY0HBggHJoAnACeAGAAX6IAcYFkgEDMC42mAEAoAEBqgEHZ3dzLXdpesgBBsABAQ&sclient=gws-wiz&ved=0ahUKEwiPnd6S8IbvAhWOHHAKHQQVAacQ4dUDCA0&uact=5" target="_blank" class="hash">#야경</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk02ye-eVRWDq3Q06yysBc4SV7ZKG9w%3A1614319347811&ei=8444YIqXMZfr-Qaki6XwBA&q=%EC%B9%B4%ED%8E%98&oq=%EC%B9%B4%ED%8E%98&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMggIABCxAxCDATICCAAyBQgAELEDMggIABCxAxCDATICCAAyAggAMgQIABADMgIIADICCAA6BwgAEEcQsAM6BAgjECdQ5EZYo0lgrUpoAnACeAGAAYUBiAHSBJIBAzAuNZgBAKABAaoBB2d3cy13aXrIAQfAAQE&sclient=gws-wiz&ved=0ahUKEwjK3J6a8IbvAhWXdd4KHaRFCU4Q4dUDCA0&uact=5" target="_blank" class="hash">#카페</a>
+        <a href="https://www.google.com/search?bih=796&biw=1166&hl=ko&sxsrf=ALeKk02-TPFBn9RG9WtnZQxvzFxgWgq59A%3A1614319358404&ei=_o44YL-mGJfN-Qae8r3oDw&q=%ED%94%8C%EB%9D%BC%ED%86%A4&oq=%ED%94%8C%EB%9D%BC%ED%86%A4&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyBQgAELEDMgQIABBDMgUIABCxAzICCAAyCAgAELEDEIMBMgIIADIFCAAQsQMyAggAMgIIADoHCAAQRxCwAzoECCMQJzoECAAQAzoECAAQCjoHCAAQhwIQFFDFS1iOVGD2VGgDcAJ4AYABf4gBnAiSAQMwLjmYAQCgAQGqAQdnd3Mtd2l6yAEFwAEB&sclient=gws-wiz&ved=0ahUKEwi_naWf8IbvAhWXZt4KHR55D_0Q4dUDCA0&uact=5" target="_blank" class="hash">#플라톤</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content_title">
+      <h1>About-Jeju<button class="content_title_icon"><i class="fas fa-angle-down"></i></button></h1>
+      <button class="nightDay_Mode">Night</button> 
+    </div>
+    <div class="content_about">제주도는 하나의 한라산체로 이루어진 섬이다. 평면도상의 형태는 장축이 단축보다 2.4배 긴 타원에 가까운 형태이다. 장축이 위도에 대하여 북동방향에서 남서방향으로 약 15도가량 기울어진 모습으로 일반적으로는 동서방향으로 보아 동서로 73㎞, 남북으로 41㎞이다. 
+
+      이전에는 제주도 전체가 한라산이라는 단일한 순상 화산체라는 설이 정설이었다. 이것이 제주도 사람들의 한라산에 대한 인식과 합쳐져서 생긴 말이 "한라산이 곧 제주도이며 제주도가 곧 한라산."이다. 하지만 연구가 진행되면서 이에 대한 반론도 나왔다.
+      
+      해발고도 200m 이하 지역은 제주도 전체면적의 55.3％로 해안지대이다. 고도 200∼500m의 중산간 지대는 전체 면적의 27.9％로 목야지나 유휴지로 구성된다. 
+     </div>
+  </div>
+
+  
+  <div class="modal">
+    <div class="wrap">
+      <span id="modal_Text">야간모드가 실행됩니다.</span>
+      <button class="modal_Button" onclick="nightDay()">확인</button>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
